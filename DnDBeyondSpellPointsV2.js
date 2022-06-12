@@ -10,7 +10,7 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
+(() => {
   'use strict';
   const sp = [
     // Class Level, Sorc Points, Spell Points, Max Slot Level
