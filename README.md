@@ -1,5 +1,5 @@
 # DnDBeyond Spell Points V2
-A better spell point tracker userscript for [DnDBeyond](https://www.dndbeyond.com)
+A [better](https://github.com/Mwr247/DnDBeyondSpellPoints) spell point tracker userscript for [DnDBeyond](https://www.dndbeyond.com)
 
 ![Spells Tab View](https://user-images.githubusercontent.com/613020/121749639-02e1d280-cad9-11eb-85f6-2479ec8c1baf.png)
 
