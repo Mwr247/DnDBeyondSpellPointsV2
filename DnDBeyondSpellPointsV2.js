@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DnDBeyond Spell Points (v2)
 // @description  Spell point tracker
-// @version      2
+// @version      2.0.1
 // @author       Mwr247
 // @namespace    Mwr247
 // @homepageURL  https://github.com/Mwr247/DnDBeyondSpellPointsV2
@@ -79,7 +79,7 @@
       console.log('data call to', path);
       obj.headers = Object.assign(obj.headers || {}, {'Content-type': 'application/json;charset=utf-8', 'Authorization': 'Bearer ' + token});
       if (obj.body) {obj.body = JSON.stringify(obj.body);}
-      fetch('https://character-service.dndbeyond.com/character/v4/' + path, obj).then(resp => resp.json()).then(data => {
+      fetch('https://character-service.dndbeyond.com/character/v5/' + path, obj).then(resp => resp.json()).then(data => {
         cb(data.data);
       }).catch(error => console.error(error));
     };
