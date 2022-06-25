@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DnDBeyond Spell Points (v2)
 // @description  Spell point tracker
-// @version      2.0.1
+// @version      2.0.2
 // @author       Mwr247
 // @namespace    Mwr247
 // @homepageURL  https://github.com/Mwr247/DnDBeyondSpellPointsV2
@@ -103,7 +103,8 @@
         return isCaster * Math[rounder === 1 ? 'floor' : 'ceil'](level / divisor);
       });
       player.level = classes.reduce((a, b) => a + b, 0) || 1;
-    	const sorcPoints = ((player.data?.actions?.class || []).find(act => act?.id === '1031') || {}).limitedUse?.maxUses || 0;
+    	const sorcPoints = (((player.data?.actions?.class || []).find(act => act?.id === '1031') || {}).limitedUse?.maxUses +
+          (player.data?.feats || []).some(feat => feat?.definition?.id === 452833) * 2) || 0;
       player.maxPoints = sorcPoints * mergeSorcPoints + sp[player.level - 1][2];
     });
   }, 100);
