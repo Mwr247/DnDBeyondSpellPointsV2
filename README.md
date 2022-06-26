@@ -17,9 +17,9 @@ This is a [userscript](https://en.wikipedia.org/wiki/Userscript) that implements
   * Alerts you when you try to cast without sufficient spell points.
 * The spell point cost is added next to the spell level category in your spell list.
 * Long resting resets your spell point maximum to full again.
-* Your remaining spell points are saved in your browser's local storage.
+* Your remaining spell points are saved in your character sheet automatically.
 * Works on a per-character basis, toggleable in the character creator optional settings.
-  * Includes a toggleable popular homebrew variant option to merge your sorcery point pool with your spell points.
+  * Includes a toggleable popular homebrew variant option to merge your sorcery point pool with your spell points. Totals points from both the Sorcerer class and Metamagic Adept.
 * V2 features:
   * Everything is saved to the sheet itself in a hidden way, so points will be accurate regardless of what computer you use, so long as the userscript is active.
   * Uses DnDBeyond's API to accurately determine spell slots and caster levels, so works correctly for any class/multiclass.
