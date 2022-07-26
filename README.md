@@ -27,7 +27,7 @@ This is a [userscript](https://en.wikipedia.org/wiki/Userscript) that implements
 ## How To Use
 
 1. Install a userscript extension of your choice. I've tested [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) in Mozilla FireFox and [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) in Google Chrome, and both worked fine as far as I could tell.
-2. Install the userscript from [DnDBeyondSpellPointsV2.js](DnDBeyondSpellPointsV2.js)
+2. Install the userscript from [DnDBeyondSpellPointsV2.js](https://raw.githubusercontent.com/Mwr247/DnDBeyondSpellPointsV2/main/DnDBeyondSpellPointsV2.js)
 3. Go to your character on [DnDBeyond](https://www.dndbeyond.com/my-characters), then to the character builder/editor, then to the first tab (where you set your character name). Under the "Optional Features" section, you should now see two new options at the bottom. Enable "Use Spell Points" to use the Spell Point system, and "Combine Spell Points with Sorcery Points" if you want to also merge your spell and sorcery points into one pool.
 
 ![Enable Spell Point Variant Rule](https://user-images.githubusercontent.com/613020/121753588-ab476500-cae0-11eb-9e75-2f4e6a91244f.png)
