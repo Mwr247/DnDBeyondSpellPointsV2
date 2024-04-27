@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DnDBeyond Spell Points (v2)
 // @description  Spell point tracker
-// @version      2.1.0
+// @version      2.2.0
 // @author       Mwr247
 // @namespace    Mwr247
 // @homepageURL  https://github.com/Mwr247/DnDBeyondSpellPointsV2
@@ -255,8 +255,8 @@
             document.querySelector('.ct-reset-pane__action .ct-button--confirm').addEventListener('click', rest);
           }, 50);
         };
-        content.getElementsByClassName('ct-primary-box__tab--spells')[0].addEventListener('click', spellClick);
-        content.getElementsByClassName('ct-primary-box__tab--actions')[0].addEventListener('click', actionClick);
+        [...content.querySelectorAll('.ct-primary-box button')].filter(a => a.innerText.toLowerCase() === 'spells')[0].addEventListener('click', spellClick);
+        [...content.querySelectorAll('.ct-primary-box button')].filter(a => a.innerText.toLowerCase() === 'actions')[0].addEventListener('click', actionClick);
         actionClick();
         content.querySelector('.ct-character-header-desktop__group--long-rest .ct-character-header-desktop__button').addEventListener('click', restClick);
         loaded = 0;
