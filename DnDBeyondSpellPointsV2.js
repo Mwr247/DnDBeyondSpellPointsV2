@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         DnDBeyond Spell Points (v2)
 // @description  Spell point tracker
-// @version      2.2.0
+// @version      2.2.1
 // @author       Mwr247
 // @namespace    Mwr247
 // @homepageURL  https://github.com/Mwr247/DnDBeyondSpellPointsV2
+// @downloadURL  https://raw.githubusercontent.com/Mwr247/DnDBeyondSpellPointsV2/main/DnDBeyondSpellPointsV2.js
+// @updateURL    https://raw.githubusercontent.com/Mwr247/DnDBeyondSpellPointsV2/main/DnDBeyondSpellPointsV2.js
 // @match        https://www.dndbeyond.com/*characters/*
 // @match        https://www.dndbeyond.com/characters
 // @run-at       document-idle
